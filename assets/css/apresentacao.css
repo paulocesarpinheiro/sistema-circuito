@@ -1,0 +1,65 @@
+/*geral*/
+body, 
+ul, 
+li, 
+p {
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+   font-size: 1.1rem;
+   font-family: Helvetica; 
+   color: #323232;
+}
+
+body{
+    background-image: url('../images/background.png');
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+/*BARRA SUPERIOR */
+.header {
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+    display: flex;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background: tomato;
+}
+
+
+/* container quem somos */ 
+#sobrenos-container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 5px grey;
+    width: 500px;
+    margin-left: auto;
+    margin-right: 110px;
+    padding: 30px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+

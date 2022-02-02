@@ -1,0 +1,171 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Imobiliária</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="assets/css/crud_imovel.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+ 
+
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <img class="masthead-avatar mb-5" src="assets/images/house.png" alt="..." />
+            <h1 class="masthead-heading text-uppercase mb-0">Imobiliária</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-home"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">Alugar e Vender nunca foi tão fácil</p>
+        </div>
+    </header>
+
+    <!-- Cadastrar Imóvel-->
+    <section class="page-section" id="cadastrar">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cadastrar Imóvel</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-home"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <iv class="col-lg-8 col-xl-7">
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="endereco" type="text" placeholder="Endereço" />
+                            <label for="endereco">Endereço</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="date" type="date" placeholder="Data de Construção" />
+                            <label for="date">Data de Construção</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="Valor" type="text" placeholder="Valor" />
+                            <label for="valor">Valor do Imóvel</label>
+                        </div>
+
+                        <h6>Tipo de Imóvel: </h6>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="tipo" id="tipo1">
+                            <label class="form-check-label" for="tipo1">
+                                Casa
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipo2">
+                            <label class="form-check-label" for="tipo2">
+                                Apartamento
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipo3">
+                            <label class="form-check-label" for="tipo3">
+                                Kitnet
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tipo" id="tipo4">
+                            <label class="form-check-label" for="tipo4">
+                                Outros
+                            </label>
+                        </div>
+                        <br />
+
+                        <h6>Finalidade: </h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="finalidade" id="finalidade1">
+                            <label class="form-check-label" for="finalidade1">
+                                Venda
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="finalidade" id="finalidade2">
+                            <label class="form-check-label" for="finalidade2">
+                                Locação
+                            </label>
+                        </div>
+
+                        <br />
+                        <h6>Negociável: </h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="negociavel" id="negociavel1">
+                            <label class="form-check-label" for="negociavel1">
+                                Sim
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="negociavel" id="negociavel2">
+                            <label class="form-check-label" for="negociavel2">
+                                Não
+                            </label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="valor=" text" placeholder="Valor do Condomínio" />
+                            <label for="valor">Valor do Condomínio</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="valor" type="tel" placeholder="(55) 99999-9999" data-sb-validations="required" />
+                            <label for="phone">Telefone de Contato</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="observacoes" type="text" placeholder="Descrição do imóvel" /></textarea>
+                            <label for="endereco">Descrição do imóvel</label>
+                        </div>
+                        <br />
+
+                        <!-- Falta o upload de imagem -->
+                        <h6>Upload de Imagens: </h6>
+
+                        <div class="form-floating mb-3">
+                            <div class="col-lg-12">
+                                <div class="form-control">
+                                    <input type="file" name="midia" required>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="btn btn-primary">
+                                <button name="submit" class="btn btn-primary" type="submit" id="img-submit" data-submit="...Enviando"><i class="fa fa-upload" aria-hidden="true"></i> Enviar</button>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="form-floating mb-3">
+                            <img src="assets/images/casa1.jpg" class="shadow p-1 mb-2 bg-white rounded" alt="Cinque Terre" width="204" height="136">
+                            <img src="assets/images/casa2.jpg" class="shadow p-1 mb-2 bg-white rounded" alt="Cinque Terre" width="204" height="136">
+                            <img src="assets/images/casa3.jpg" class="shadow p-1 mb-2 bg-white rounded" alt="Cinque Terre" width="204" height="136">
+                        </div>
+                        <br />
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit"><i class="fa fa-check" aria-hidden="true"></i> Cadastrar</button>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

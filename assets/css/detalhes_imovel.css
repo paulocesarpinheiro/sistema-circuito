@@ -1,0 +1,45 @@
+* { margin: 0; padding: 0; }
+
+::selection { background-color: orange; color: white; }
+::-moz-selection { background-color: orange; color: white; }
+
+body {
+    background-color: #fff;
+    margin: 40px;
+    font: 13px/20px normal Helvetica, Arial, sans-serif;
+    color: #4F5155;
+}
+
+#body {
+    margin: 0 15px 0 15px;
+}
+
+.box-carousel{
+    margin-top: 10px;
+}
+
+.box-info{
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.box-titulo{
+    margin-top: 20px;
+}
+
+.box-actions{
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#card {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #D0D0D0;
+    box-shadow: 0 0 8px #D0D0D0;
+}
